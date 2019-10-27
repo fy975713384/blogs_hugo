@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Wing&#39;s Blogs</title>
-    <link>https://example.com/categories/</link>
+    <link>http://fy975713384.github.io/hugo_blogs/categories/</link>
     <description>Recent content in Categories on Wing&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 17 Sep 2019 17:02:02 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://fy975713384.github.io/hugo_blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Notes</title>
-      <link>https://example.com/category/notes/</link>
+      <link>http://fy975713384.github.io/hugo_blogs/category/notes/</link>
       <pubDate>Tue, 17 Sep 2019 17:02:02 +0800</pubDate>
       
-      <guid>https://example.com/category/notes/</guid>
+      <guid>http://fy975713384.github.io/hugo_blogs/category/notes/</guid>
       <description></description>
     </item>
     

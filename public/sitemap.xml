@@ -1,57 +1,57 @@
-<?xml-stylesheet type="text/xsl" href="https://example.com/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://fy975713384.github.io/hugo_blogs/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/categories/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/category/notes/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/category/notes/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tag/notes/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/tag/notes/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/posts/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/posts/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/2019/09/17/second/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/2019/09/17/second/</loc>
     <lastmod>2019-09-17T17:02:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/tags/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/2018/09/16/first/</loc>
+    <loc>http://fy975713384.github.io/hugo_blogs/2018/09/16/first/</loc>
     <lastmod>2019-09-18T14:54:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
