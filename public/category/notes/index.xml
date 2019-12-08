@@ -13,20 +13,11 @@
     
     <item>
       <title>Second</title>
-      <link>http://fy975713384.github.io/hugo_blogs/2019/09/17/second/</link>
+      <link>http://fy975713384.github.io/hugo_blogs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</link>
       <pubDate>Tue, 17 Sep 2019 17:02:02 +0800</pubDate>
       
-      <guid>http://fy975713384.github.io/hugo_blogs/2019/09/17/second/</guid>
+      <guid>http://fy975713384.github.io/hugo_blogs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</guid>
       <description>我的第二篇博客</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>http://fy975713384.github.io/hugo_blogs/2018/09/16/first/</link>
-      <pubDate>Sun, 16 Sep 2018 11:19:04 +0800</pubDate>
-      
-      <guid>http://fy975713384.github.io/hugo_blogs/2018/09/16/first/</guid>
-      <description>我的第一篇博客</description>
     </item>
     
   </channel>

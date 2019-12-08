@@ -3,7 +3,7 @@
 # ------------------------------------- #
 baseURL = "http://fy975713384.github.io/hugo_blogs"
 title = "Wing's Blogs"
-theme = "hugo-theme-den"
+theme = "learn"
 #enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support
 hasCJKLanguage = true        # detect CJK languages for word count etc.
