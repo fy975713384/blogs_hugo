@@ -1,207 +1,99 @@
-# ------------------------------------- #
-# ---- General Settings --------------- #
-# ------------------------------------- #
-baseURL = "http://fy975713384.github.io/hugo_blogs"
-title = "Wing's Blogs"
-theme = "learn"
-#enableRobotsTXT = true       # generate robots.txt
-enableEmoji = true           # use emoji support
-hasCJKLanguage = true        # detect CJK languages for word count etc.
-preserveTaxonomyNames = true # do not make tag names lowercase
-# uglyURLs = true            # more info: https://gohugo.io/content-management/urls/#ugly-urls
-rssLimit = 20                # limit number of entries in RSS feeds
+baseURL = "/"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh"
 
-canonifyurls = true
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-
-# Copyright, appears in the footer
-# copyright = ""             # default: author.name
-
-# Pagination
-# number of entries per page for archives, tags and categories
-# since we don't have list view, recommend a large value
-paginate = 20
-paginatePath = "page"
-
-# Syntax Hightlight
-PygmentsCodeFences = true
-PygmentsUseClasses = true    # required for shhighlight shortcode
-
-# service plugins
-disqusShortname = ""         # disqus_shortname
-googleAnalytics = ""         # UA-XXXXXXXX-X
-
-# language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "zh-cn"           # Default language to use
-defaultContentLanguageInSubdir = true
-
-# Links format
-[permalinks]
-  posts = "/:year/:month/:day/:slug/"
-  categories = "/category/:slug/"      # required
-  tags = "/tag/:slug/"                 # required
-  pages = "/:slug/"
-
-[author]                     # required
-  name = "Wing"
-
-[sitemap]                    # required
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-# ------------------------------------- #
-# ---- Other Params ------------------- #
-# ------------------------------------- #
+title = "Wing's Blog"
+theme = "hugo-coder"
+# themesdir = "themes/learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
 [params]
-  since = "2017"             # Site creation time
-  rssFullContent = true      # set true to use full content instead of summary
+  editURL = "https://github.com/fy975713384/hugo_blogs/edit/master/exampleSite/content/"
+  description = "Wing's Blog"
+  author = "wing"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
 
-  # site info (optional)
-  keywords = ["Hugo", "theme", "den"]
-  description = "A simple theme for Hugo"
-  logoTitle = "Wing" # shown on top-left, default: title
-  siteLogoImage = "images/globe.svg"     # shown besides logoTitle
-  # headerTitle = "Den"                   # default: title
-  headerImage = "images/background2.jpg"
-  showAuthorCard = true # Whether to show author information below the article
+[Languages]
+[Languages.zh]
+# title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "简体中文"
 
-  showMenuLanguages = false
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
 
-  autoLoadComments = false # auto load comment when scrolling down
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+url = "showcase"
+weight = 11
 
-  # paginate style, default use numbered pagination links
-  # if true, use original "Previous" and "Next" links.
-  # paginateOriginalStyle = true
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
 
-  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
-  dateFormatToUse = "2006-01-02"
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
 
-  google_verification = ""  # Google_Verification
+[Languages.en]
+title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "English"
 
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
-  customCSS = []             # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
 
-# ------------------------------------- #
-# ---- Related Articles --------------- #
-# ------------------------------------- #
-[related]
-  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
-  threshold = 50
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+url = "showcase"
+weight = 11
 
-  # To get stable "See also" sections we, by default, exclude newer related pages.
-  includeNewer = true
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
 
-  # Will lower case keywords in both queries and in the indexes.
-  toLower = false
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
 
-[[related.indices]]
-  name = "categories"
-  weight = 200
+[Languages.fr]
+title = "Documentation du thème Hugo Learn"
+weight = 2
+languageName = "Français"
 
-[[related.indices]]
-  name = "keywords"
-  weight = 150
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Repo GitHub"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
 
-[[related.indices]]
-  name = "tags"
-  weight = 100
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Vitrine"
+url = "/showcase"
+weight = 11
 
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Documentation Hugo"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
 
-# [languages.en]
-#   languageCode = "en"
-#   languageName = "English"
-#   contentDir = "content/en"
-#   weight = 1
-
-#   [[languages.en.menu.main]]
-#     name = "Notes"
-#     weight = 10
-#     identifier = "notes"
-#     url = "category/notes/"
-#   [[languages.en.menu.main]]
-#     name = "Demos"
-#     weight = 20
-#     identifier = "demos"
-#     url = "category/demos/"
-
-#   [[languages.en.menu.social]]
-#     name = "GitHub"
-#     weight = 10
-#     identifier = "github"
-#     url = "https://github.com/fy975713384"
-
-#   [[languages.en.menu.links]]
-#     name = "About Me"
-#     weight = 10
-#     identifier = "about-me"
-#     url = "https://github.com/shaform/hugo-theme-den/"
-
-# [languages.zh-tw]
-#   languageCode = "zh-tw"
-#   languageName = "繁體中文"
-#   contentDir = "content/zh-tw"
-#   weight = 2
-
-#   [languages.zh-tw.params]
-#     description = "一個簡單的佈景。"
-
-#   [[languages.zh-tw.menu.main]]
-#     name = "筆記"
-#     weight = 10
-#     identifier = "notes"
-#     url = "category/notes/"
-#   [[languages.zh-tw.menu.main]]
-#     name = "展示"
-#     weight = 20
-#     identifier = "demos"
-#     url = "category/demos/"
-
-#   [[languages.zh-tw.menu.social]]
-#     name = "GitHub"
-#     weight = 10
-#     identifier = "github"
-#     url = "https://github.com/shaform/hugo-theme-den/"
-
-#   [[languages.zh-tw.menu.links]]
-#     name = "關於我"
-#     weight = 10
-#     identifier = "about-me"
-#     url = "https://github.com/shaform/hugo-theme-den/"
-
-[languages.zh-cn]
-  languageCode = "zh-cn"
-  languageName = "简体中文"
-  contentDir = "content/zh-cn"
-  weight = 2
-
-  [languages.zh-cn.params]
-    description = "永远不要停止思考"
-
-  [[languages.zh-cn.menu.main]]
-    name = "笔记"
-    weight = 10
-    identifier = "notes"
-    url = "category/notes/"
-  [[languages.zh-cn.menu.main]]
-    name = "展示"
-    weight = 20
-    identifier = "demos"
-    url = "category/demos/"
-
-  [[languages.zh-cn.menu.social]]
-    name = "GitHub"
-    weight = 10
-    identifier = "github"
-    url = "https://github.com/fy975713384"
-
-  [[languages.zh-cn.menu.links]]
-    name = "关于我"
-    weight = 10
-    identifier = "about-me"
-    url = "https://github.com/fy975713384"
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Crédits"
+url = "/credits"
+weight = 30
