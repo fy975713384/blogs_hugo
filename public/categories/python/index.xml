@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Python on </title>
+    <link>/categories/python/</link>
+    <description>Recent content in Python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 28 Oct 2019 00:58:33 +0800</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,15 +23,6 @@ ASCII ASCII（American Standard Code for Information Interchange，美国信息�
 MBCS MBCS（Muilti-Bytes Charecter Set，多字节字符集）使用两个字节来代表一个字符的各种汉字延伸编码方式，又称为 ANSI 编码。在简体中文系统下，ANSI 编码代表 GB2312 编码；日文操作系统下，ANSI 编码代表 Shift_JIS 编码；韩文操作系统下，ANSI 编码代表 Euc-kr 编码。不统一的编码标准会不可避免地出现冲突。
 GBK 和 gb2312 见上
 UCS Universal Character Set, UCS（中文：通用字符集）是由ISO制定的ISO 10646（或称ISO/IEC 10646）标准所定义的标准字符集。UCS-2：使用两个定长的字节来表示一个字符。UCS-4：是一个更大的尚未填充完全的 31 位字符集，加上恒为 0 的首位，共需占据 32 位，即四字节。理论上最多能表示231个字符，完全可以涵盖一切语言所用的符号。</description>
-    </item>
-    
-    <item>
-      <title>Second</title>
-      <link>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</link>
-      <pubDate>Tue, 17 Sep 2019 17:02:02 +0800</pubDate>
-      
-      <guid>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</guid>
-      <description>我的第二篇博客 </description>
     </item>
     
   </channel>

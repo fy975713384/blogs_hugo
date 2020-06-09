@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on </title>
+    <link>/tags/notes/</link>
+    <description>Recent content in notes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 17 Sep 2019 17:02:02 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second</title>
+      <link>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</link>
+      <pubDate>Tue, 17 Sep 2019 17:02:02 +0800</pubDate>
+      
+      <guid>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/second/</guid>
+      <description>我的第二篇博客 </description>
+    </item>
+    
+  </channel>
+</rss>
