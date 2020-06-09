@@ -32,11 +32,11 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 在安装 Python 3.3 以上版本的 Python 时，我们可以看到下图中的一个选项，当我们勾选时，系统便会帮助我们自动安装 Python Launcher
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7vqazbvj20iw0bqwhr.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7vqazbvj20iw0bqwhr.jpg)
 
 当点击 Customize installation 时，会显示如下界面：
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7uqpwl0j20iw0bqdj3.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7uqpwl0j20iw0bqdj3.jpg)
 
 图中标注的小字告诉我们，安装 Python Launcher 后可以通过全局命令 ‘py’ 来更方便地启动 Python。不勾选 launcher 项时，系统则不会安装 Python Launcher （但默认情况下该工具都是被勾选的）。
 
@@ -44,14 +44,14 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 - 仅为当前用户安装时：
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7x0umdtj20qj0e3ac7.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7x0umdtj20qj0e3ac7.jpg)
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7xtd4fdj20l20ej76k.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7xtd4fdj20l20ej76k.jpg)
 
 - 为所有用户安装时：
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7yeb0ecj20qj0e340p.jpg)
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7yyl4ikj20m50fhjus.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7yeb0ecj20qj0e340p.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7yyl4ikj20m50fhjus.jpg)
 
 ### 3. Python Launcher 的环境变量
 
@@ -59,11 +59,11 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 当为所有用户安装时，我们会发现 py.exe 被自动安装到 C:\Windows 下了，当我们检查系统默认设置的环境变量时，可以看到下图中的 windir 的值已经默认设置为 C:\Windows ，这第一点对于所有 Windows 系统都是相同的 ，系统安装的时候便会做这些工作。
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7zybt67j20ay0ba3za.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm7zybt67j20ay0ba3za.jpg)
 
 当仅为当前用户安装时，我们会发现 py.exe 所在的路径会自动添加到系统的用户变量中：
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm809rgz7j20ay0bagn0.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm809rgz7j20ay0bagn0.jpg)
 
 因此，无论以哪种方式安装 Python Launcher 我们都不需要再手动配置环境变量了。
 
@@ -71,13 +71,13 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 Python Launcher 的使用方法我们可以通过在命令行中输入 py -h 进行查看，如下图：
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm80qrrwpj20i706b3yp.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm80qrrwpj20i706b3yp.jpg)
 
 同样地，我们也可以通过查阅官方文档进行了解
 
 [https://docs.python.org/3/using/windows.html#launcher](https://docs.python.org/3/using/windows.html#launcher)
 
-![image.png](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm81bpmc8j20mn0ihmyn.jpg)
+![image](https://ws1.sinaimg.cn/large/ed19fa55gy1gfm81bpmc8j20mn0ihmyn.jpg)
 
 ### 5. 结语
 
