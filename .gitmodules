@@ -3,3 +3,7 @@
 	path = public
 	url = git@github.com:fy975713384/fy975713384.github.io.git
 	branch = master
+[submodule "themes/den"]
+	path = themes/den
+	url = git@github.com:fy975713384/hugo-theme-den.git
+	branch = master
