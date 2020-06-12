@@ -4,6 +4,7 @@
 baseURL = "/"
 title = "Wing"
 theme = "den"
+enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support
 hasCJKLanguage = true        # detect CJK languages for word count etc.
 preserveTaxonomyNames = true # do not make tag names lowercase
@@ -20,7 +21,6 @@ disqusShortname = ""         # disqus_shortname
 googleAnalytics = ""         # UA-XXXXXXXX-X
 
 contentDir = "content"
-weight = 2
 
 # language support # en / zh-tw / other... translations present in i18n/
 defaultContentLanguage = "zh-cn"           # Default language to use

@@ -1,7 +1,7 @@
 ---
 title: 'Python Launcher（for Windows）'
-date: 2020-06-09T18:27:30+08:00
-lastmod: 2020-06-09T18:27:30+08:00
+date: 2018-09-09T18:27:30+08:00
+lastmod: 2018-09-09T18:27:30+08:00
 tags: ['Python']
 categories: ['Notes']
 authors:
