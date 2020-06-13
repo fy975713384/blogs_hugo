@@ -105,23 +105,38 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 # ---------------- #
 
 [menu]
-  # [[menu.main]]
-  #   name = "笔记"
-  #   weight = 1
-  #   identifier = "notes"
-  #   url = "category/notes/"
-  # [[menu.main]]
-  #   name = "游记"
-  #   weight = 2
-  #   identifier = "travals"
-  #   url = "category/travals/"
+  [[menu.main]]
+    name = "笔记"
+    weight = 10
+    identifier = "notes"
+    url = "category/notes/"
+
+  [[menu.main]]
+    name = "游记"
+    weight = 20
+    identifier = "travals"
+    url = "category/travals/"
+
   [[menu.social]]
     name = "GitHub"
     weight = 10
     identifier = "github"
     url = "https://github.com/fy975713384"
+  
+  [[menu.social]]
+    name = "联系我"
+    weight = 11
+    identifier = "email"
+    url = "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=NFVOQVgaUnRSW0xZVV1YGldbWQ"
+  
   [[menu.links]]
     name = "关于我"
     weight = 10
     identifier = "about-me"
     url = "/"
+
+  [[menu.links]]
+    name = "简书主页"
+    weight = 10
+    identifier = "jianshu"
+    url = "https://www.jianshu.com/u/a479a910abe7"
