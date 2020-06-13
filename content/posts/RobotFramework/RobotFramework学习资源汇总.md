@@ -1,5 +1,5 @@
 ---
-title: 'RobotFramework 学习资源汇总'
+title: 'Robot Framework 学习资源汇总'
 date: 2019-02-22T19:12:04+08:00
 lastmod: 2019-02-22T19:12:04+08:00
 tags: ['RobotFramework', 'RF入门']
