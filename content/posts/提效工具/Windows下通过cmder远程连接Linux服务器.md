@@ -5,7 +5,7 @@ lastmod: 2018-12-31T01:16:23+08:00
 tags: ['提效工具', 'cmder']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 > 阅读引导

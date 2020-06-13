@@ -5,7 +5,7 @@ lastmod: 2020-08-26T15:06:49+08:00
 tags: ['RobotFramework', 'RF进阶']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 > 自动化测试脚本通常都需要在不同环境中运行，良好的测试环境参数化配置会使脚本的运行具备较高的灵活性。

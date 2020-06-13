@@ -5,7 +5,7 @@ lastmod: 2018-07-16T14:34:07+08:00
 tags: ['RobotFramework', 'RF进阶', '提效工具', '编辑器', 'Sublime']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 _RF 是最强的自动化测试框架， 没有之一！_

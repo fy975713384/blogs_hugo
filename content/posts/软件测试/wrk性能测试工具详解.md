@@ -5,7 +5,7 @@ lastmod: 2019-11-12T16:52:49+08:00
 tags: ['性能测试', '提效工具']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 ## wrk 简介

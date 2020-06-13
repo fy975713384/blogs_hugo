@@ -5,7 +5,7 @@ lastmod: 2019-10-06T16:14:18+08:00
 tags: ['Python']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 [TOC]

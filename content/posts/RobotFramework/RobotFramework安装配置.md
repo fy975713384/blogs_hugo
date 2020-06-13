@@ -5,7 +5,7 @@ lastmod: 2019-02-19T00:27:04+08:00
 tags: ['RobotFramework', 'RF入门']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 _RF 是最强的自动化测试框架，没有之一！_

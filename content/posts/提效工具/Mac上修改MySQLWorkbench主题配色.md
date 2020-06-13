@@ -5,7 +5,7 @@ lastmod: 2019-09-30T15:52:42+08:00
 tags: ['提效工具']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 > 在 Mac 上使用了 Mojava 的深色主题，当我安装 Mysql Workbench 时，它也默认使用了深色主题的配色，但 Mysql Workbench 的深色主题让我十分不适应，因此想改为浅色主题，但发现设置中根本没有和主题相关的配置，Google 了好久终于找到了一种方法

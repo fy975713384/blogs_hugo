@@ -5,7 +5,7 @@ lastmod: 2019-02-22T19:12:04+08:00
 tags: ['RobotFramework', 'RF入门']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 ### 学习网站

@@ -5,7 +5,7 @@ lastmod: 2018-09-09T18:27:30+08:00
 tags: ['Python']
 categories: ['Notes']
 authors:
-  - 'wing'
+  - '潘峰'
 ---
 
 ### 1. 什么是 Python Launcher
