@@ -8,6 +8,8 @@ authors:
   - '潘峰'
 ---
 
+> 建议练习时可以使用 flask 等 Web 框架在本地搭建一个 HTTP 服务
+
 ## wrk 简介
 
 wrk 是一个用于 HTTP 协议的基准测试工具。
