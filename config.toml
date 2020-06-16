@@ -51,10 +51,10 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   # site info (optional)
   description = "不断拓展傍身之术，不忘探寻心中之道"
   logoTitle = "Wing" # shown on top-left, default: title
-  customFavicon = "images/feather.png"
-  siteLogoImage = ""     # shown besides logoTitle
-  # headerTitle = "Den"                   # default: title
-  headerImage = "images/background2.jpg"
+  headerTitle = "Wing"                   # default: title
+  customFavicon = "images/wing_icon.png"
+  # siteLogoImage = "images/wing_icon.png"     # shown besides logoTitle
+  headerImage = "images/background.jpg"
   showAuthorCard = true # Whether to show author information below the article
 
   showMenuLanguages = true
