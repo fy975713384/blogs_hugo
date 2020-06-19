@@ -8,9 +8,7 @@ authors:
   - '潘峰'
 ---
 
-[TOC]
-
-# Python 函数参数
+# Python 函数参数详解
 
 ## 前言
 

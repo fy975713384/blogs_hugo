@@ -8,7 +8,11 @@ authors:
   - '潘峰'
 ---
 
-### 1. 什么是 Python Launcher
+[TOC]
+
+# Python Launcher（for Windows）
+
+## 1. 什么是 Python Launcher
 
 **_原文：_**
 
@@ -28,7 +32,7 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 不同于 PATH 变量，Python Launcher 将正确选择最合适的 Python 版本。它更喜欢每个用户在系统范围内的安装，并且运行指定的 Python 版本，而不是使用最近安装的版本。
 
-### 2. Python Launcher 的位置
+## 2. Python Launcher 的位置
 
 在安装 Python 3.3 以上版本的 Python 时，我们可以看到下图中的一个选项，当我们勾选时，系统便会帮助我们自动安装 Python Launcher
 
@@ -53,7 +57,7 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 ![image](http://ww1.sinaimg.cn/large/ed19fa55gy1gfn6azwjjvj20qj0e3abf.jpg)
 ![image](http://ww1.sinaimg.cn/large/ed19fa55gy1gfn6b9v8bxj20m50fhq56.jpg)
 
-### 3. Python Launcher 的环境变量
+## 3. Python Launcher 的环境变量
 
 为什么 Python Launcher 不需要手动配置环境变量呢？
 
@@ -67,7 +71,7 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 因此，无论以哪种方式安装 Python Launcher 我们都不需要再手动配置环境变量了。
 
-### 4. Python Launcher 的用法
+## 4. Python Launcher 的用法
 
 Python Launcher 的使用方法我们可以通过在命令行中输入 py -h 进行查看，如下图：
 
@@ -79,7 +83,7 @@ Python Launcher 的使用方法我们可以通过在命令行中输入 py -h 进
 
 ![image](http://ww1.sinaimg.cn/large/ed19fa55gy1gfn6do1wf3j20mn0ih0t8.jpg)
 
-### 5. 结语
+## 5. 结语
 
 综上所述，py -version 启动 python 的方式其实应该是官方更为推崇的一种方式，无需手动设置环境变量，并且能指定启动 python 的版本，功能不要太强大！绝对是在多版本 Python 共存的环境下，启动不同版本 Python 的利器！
 

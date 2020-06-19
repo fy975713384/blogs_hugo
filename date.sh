@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo $(date +%Y-%m-%dT%H:%M:%S+8:00)
+echo $(date +%Y-%m-%dT%H:%M:%S+08:00)
