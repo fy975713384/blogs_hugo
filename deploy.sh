@@ -25,3 +25,9 @@ git commit -m "$msg"
 git push origin master
 
 printf "\033[0;32mDeployment complete!\033[0m\n"
+
+# Go Back
+cd ..
+
+#
+git add . && git commit -m "update for add new post" && git push -u origin master
