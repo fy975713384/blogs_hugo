@@ -75,6 +75,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   customCSS = []             # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
 
+[params.comments]
+  owner = "fy975713384"
+  repo = "fy975713384.github.io"
+  clientID = "35afb85e4c521d6dbeb8"
+  clientSecret = "463c9ec266980fd7358a11479beda5284ecf9f71"
+
 # ------------------------------------- #
 # ---- Related Articles --------------- #
 # ------------------------------------- #
@@ -88,17 +94,17 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   # Will lower case keywords in both queries and in the indexes.
   toLower = false
 
-[[related.indices]]
-  name = "categories"
-  weight = 200
+  [[related.indices]]
+    name = "categories"
+    weight = 200
 
-[[related.indices]]
-  name = "keywords"
-  weight = 150
+  [[related.indices]]
+    name = "keywords"
+    weight = 150
 
-[[related.indices]]
-  name = "tags"
-  weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 100
 
 # ---------------- #
 # ---- menu ------ #
