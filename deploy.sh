@@ -30,4 +30,4 @@ printf "\033[0;32mDeployment complete!\033[0m\n"
 cd ..
 
 #
-git add . && git commit -m "update for add new post" && git push -u origin master
+git add . && git commit -m "update posts" && git push -u origin master

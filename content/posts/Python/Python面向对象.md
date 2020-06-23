@@ -1,5 +1,5 @@
 ---
-title: 'Python面向对象'
+title: 'Python 面向对象'
 date: 2019-03-23T12:19:10+08:00
 lastmod: 2019-03-23T12:19:10+08:00
 tags: ['Python', '编程范式']
