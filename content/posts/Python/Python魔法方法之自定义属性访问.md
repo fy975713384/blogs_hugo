@@ -15,9 +15,9 @@ draft: true
 
 ## \_\_getattribute\_\_
 
-`object.__getattribute__(self, name)` 会在访问实例的任何属性时无条件调用。  
-重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。  
-当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
+- `object.__getattribute__(self, name)` 方法会在访问实例的任何属性时无条件调用。
+- 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
+- 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
 
 示例代码：
 
@@ -111,7 +111,6 @@ I am protector
           return super().__getattribute__(name)
   ...
 
-
   p = Karen()
   p.holdon
   ```
@@ -125,3 +124,15 @@ I am protector
   ...
   RecursionError: maximum recursion depth exceeded while calling a Python object
   ```
+
+## \_\_getattr\_\_
+
+- `object.__getattr__(self, name)` 方法会在默认属性访问失败触发 `AttributeError` 时被调用。
+  - `object.__getattribute__(self, name)` 因 `name` 不是实例属性而触发 `AttributeError`
+  - 因 `name` 不是类树中用于 `self` 的属性而触发 `AttributeError`
+  - `name.__get__()` 触发 `AttributeError`
+- 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
+- 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
+
+> 参考来源：  
+> https://docs.python.org/3/reference/datamodel.html#special-method-names
