@@ -130,6 +130,27 @@ syntax on
 $ brew search zsh-
 ```
 
+## Additional. 配置终端网络代理加速你的 Homebrew
+
+> 由于某些原因 Homebrew 在国内下载速度十分慢，试过很多方法都不太理想（如配置各种国内源），只有配置终端网络代理体验极佳（仅仅需要有梯子）
+
+1. 打开代理工具，查看代理服务器设置中的 HTTP 端口号
+
+2. 使用 iTerm2 打开 zsh 的配置文件 .zsh
+
+   ```shell
+   $ vim ~/.zsh
+   ```
+
+3. 在文件最底部添加如下两行并保存
+
+   ```
+   alias proxy="export ALL_PROXY='http://127.0.0.1:xxxx'"
+   alias proxyreset="unset ALL_PROXY"
+   ```
+
+4. 在 iTerm2 中执行 `proxy` 命令启动代理，执行 `proxyreset` 则可关闭代理
+
 ## Final. 命令行工具推荐
 
 - [autojump](https://github.com/wting/autojump)
