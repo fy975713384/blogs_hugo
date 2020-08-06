@@ -1,23 +1,24 @@
 ---
-title: 'Python 魔法方法之自定义属性访问'
+title: 'Python 魔法方法之自定义实例属性'
 date: 2020-06-17T12:39:01+08:00
 lastmod: 2020-06-17T12:39:01+08:00
 tags: ['Python', 'Python魔法方法']
 categories: ['Notes']
 authors:
   - '潘峰'
-draft: true
 ---
 
-# Python 魔法方法之自定义属性访问
+# Python 魔法方法之自定义实例属性
 
-> _Python 魔法方法系列 让你的代码更加 pythonic 一些_
+> _Python 魔法方法系列 让你的代码更加 pythonic_
 
 ## \_\_getattribute\_\_
 
-- `object.__getattribute__(self, name)` 方法会在访问实例的任何属性时无条件调用。
-- 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
-- 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
+`object.__getattribute__(self, name)` 方法用于自定义实例属性的访问，使用时需注意：
+
+- 该魔法方法会在访问实例的任何属性时无条件调用。
+- 重写该魔法方法时需要返回一个属性值或是触发 `AttributeError` 异常。
+- 当定制类继承 `Object` 时，同时也会继承该魔法方法，但它没有执行任何操作。
 
 示例代码：
 
@@ -127,10 +128,12 @@ I am protector
 
 ## \_\_getattr\_\_
 
-- `object.__getattr__(self, name)` 方法会在默认属性访问失败触发 `AttributeError` 时被调用。
-  - `object.__getattribute__(self, name)` 因 `name` 不是实例属性而触发 `AttributeError`
-  - 因 `name` 不是类树中用于 `self` 的属性而触发 `AttributeError`
-  - `name.__get__()` 触发 `AttributeError`
+`object.__getattr__(self, name)` 方法同样用于自定义实例属性的访问，使用时需注意：
+
+- 该魔法方法会在默认属性访问失败触发 `AttributeError` 时被调用。
+  - 该魔法方法因参数 `name` 不是实例属性而触发 `AttributeError`
+  - 该魔法方法因参数 `name` 不是类树中用于 `self` 的属性而触发 `AttributeError`
+  - 因 `name.__get__()` 触发 `AttributeError`
 - 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
 - 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
 
