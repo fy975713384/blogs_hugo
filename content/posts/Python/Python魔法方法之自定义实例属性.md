@@ -12,7 +12,7 @@ authors:
 
 > _Python 魔法方法系列 让你的代码更加 pythonic_
 
-## \_\_getattribute\_\_
+## \_\_getattribute\_\_()
 
 `object.__getattribute__(self, name)` 方法用于自定义实例属性的访问，使用时需注意：
 
@@ -126,7 +126,7 @@ I am protector
   RecursionError: maximum recursion depth exceeded while calling a Python object
   ```
 
-## \_\_getattr\_\_
+## \_\_getattr\_\_()
 
 `object.__getattr__(self, name)` 方法同样用于自定义实例属性的访问，使用时需注意：
 
