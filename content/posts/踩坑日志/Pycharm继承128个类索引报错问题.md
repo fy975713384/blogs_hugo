@@ -27,14 +27,14 @@ Pycharm 版本：PyCharm 2020.1.3 (Professional Edition)
 
 ```mermaid
 graph TB
-    subgraph 菱形继承
-        LibAsset --> |继承| BusBase
-        ... -->  |继承| BusBase
-        LibFund --> |继承| BusBase
-        LoanLibrary --> |继承| LibAsset
-        LoanLibrary --> |继承| ...
-        LoanLibrary --> |继承| LibFund
-    end
+subgraph 菱形继承
+    LibAsset --> |继承| BusBase
+    ... -->  |继承| BusBase
+    LibFund --> |继承| BusBase
+    LoanLibrary --> |继承| LibAsset
+    LoanLibrary --> |继承| ...
+    LoanLibrary --> |继承| LibFund
+end
 ```
 
 最顶层 `LoanLibrary` 代码大概如下

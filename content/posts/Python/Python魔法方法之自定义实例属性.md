@@ -1,7 +1,7 @@
 ---
 title: 'Python 魔法方法之自定义实例属性'
 date: 2020-06-17T12:39:01+08:00
-lastmod: 2020-06-17T12:39:01+08:00
+lastmod: 2020-09-15T18:31:35+08:00
 tags: ['Python', 'Python魔法方法']
 categories: ['Notes']
 authors:
@@ -136,6 +136,82 @@ I am protector
   - 因 `name.__get__()` 触发 `AttributeError`
 - 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
 - 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
+
+## \_\_setattr\_\_()
+
+`object.__setattr__(self, name, value)` 方法用于自定义实例属性的赋值，使用时需注意：
+
+- 该魔法方法会在尝试给实例属性赋值时被调用。
+- 如果需要给实例属性赋值，则还需要调用基类的同名方法。
+
+示例代码：
+
+```python
+class Karen:
+    age = 30
+    name = 'Karen'
+
+    def __setattr__(self, key, value):
+        print('__setattr__')
+        if key == 'age':
+            print('age cannot be modified')
+        else:
+            print('assign value via Object.__setattr__(self, key, value)')
+            super().__setattr__(key, value)
+
+
+p = Karen()
+p.age = 'Any'
+p.name = 'Karen1'
+print(p.age)
+print(p.name)
+```
+
+执行结果：
+
+```python
+__setattr__
+age cannot be modified
+__setattr__
+assign value via Object.__setattr__(self, key, value)
+30
+Karen1
+```
+
+## \_\_delattr\_\_()
+
+`object.__delattr__(self, name)` 方法用于自定义实例属性的删除，使用时需注意：
+
+- 该魔法方法会在 `del obj.name` 或 `delattr(obj, name)` 时被调用。
+- 该方法仅当上述动作有意义时才应被实现。
+
+示例代码：
+
+```python
+class Karen:
+    Katherine = True
+    Holdon = True
+    Karen = True
+
+    def __delattr__(self, name):
+        print('__delattr__')
+
+
+p = Karen()
+del p.Katherine
+delattr(p, 'Katherine')
+```
+
+执行结果：
+
+```python
+__delattr__
+__delattr__
+```
+
+## \_\_dir\_\_()
+
+`object.__dir__(self)` 在对实例调用 `dir()` 时被调用。该魔法方法必须返回一个 `sequence`。`dir()` 会将该 `sequence` 转换成列表并进行排序。
 
 > 参考来源：  
 > https://docs.python.org/3/reference/datamodel.html#special-method-names
