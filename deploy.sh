@@ -22,7 +22,7 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin master
+git push -u origin master
 
 printf "\033[0;32mDeployment complete!\033[0m\n"
 
