@@ -125,7 +125,7 @@ Jack 24 Beijing Engineer
 def test_arg(*arg): ...
 ```
 
-**`*` 表示将函数调用时的多个参数打包成一个元组**
+_`*` 表示将函数调用时的多个参数打包成一个元组_
 
 你可以传入任意多个元素（包括 0）到参数中，在函数调用时会自动被认为是一个元组
 
@@ -138,27 +138,23 @@ def test_arg(**kwargs): ...
 def test_arg(city, **kwargs): ...
 ```
 
-**`**` 表示将函数调用时的多个关键字参数打包成一个字典\*\*
+_`**` 表示将函数调用时的多个关键字参数打包成一个字典_
 
 可以这样调用它
 
 ```python
-test_arg(name='John', job='hoker')
-test_arg('beijin', name='john')
+test_arg(name='John', job='hacker')
+test_arg('beijing', name='john')
 ```
 
 关键字参数可以用来后期扩充函数的功能，例如：先设定必要的参数，之后选择性的增加可选参数。
 
 #### Parameter 组合使用时的顺序
 
-位置或关键字参数-非默认参数 > 位置或关键字参数-默认参数 > 可变位置参数 > 仅关键字参数 > 可变关键字参数
+位置或关键字参数-非默认参数 >> 位置或关键字参数-默认参数 >> 可变位置参数 >> 仅关键字参数 >> 可变关键字参数
 
-## 参考来源
-
-[https://docs.python.org/3.6/glossary.html#term-parameter](https://docs.python.org/3.6/glossary.html#term-parameter)
-
-[https://docs.python.org/3.6/glossary.html#term-argument](https://docs.python.org/3.6/glossary.html#term-argument)
-
-[https://docs.python.org/3.6/faq/programming.html#faq-argument-vs-parameter](https://docs.python.org/3.6/faq/programming.html#faq-argument-vs-parameter)
-
-[https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888](https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888)
+> **参考来源**：  
+> https://docs.python.org/3.6/glossary.html#term-parameter  
+> https://docs.python.org/3.6/glossary.html#term-argument  
+> https://docs.python.org/3.6/faq/programming.html#faq-argument-vs-parameter  
+> https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888
