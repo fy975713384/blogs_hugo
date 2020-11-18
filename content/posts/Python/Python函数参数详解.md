@@ -12,7 +12,7 @@ authors:
 
 ## 前言
 
-> 最近在跟同事讨论一个方法的调用时涉及到了 Python 函数的位置参数和关键字参数的相关知识，发现之前学习 Python 时对函数参数研究的并不透彻，且很多地方已经有些生疏了，故而查阅了一下 Python 官方文档和廖雪峰的官网中的相关知识，并记录总结如下。
+> 最近在跟同事讨论一个方法的调用时涉及到了 Python 函数的位置参数和关键字参数的相关知识，发现之前学习 Python 时对函数参数研究的并不透彻，且很多地方已经有些生疏了，故而查阅了一下 Python 官方文档和廖雪峰的官网中的相关知识，并总结记录如下。
 
 ## Argument 和 Parameter
 
@@ -80,14 +80,14 @@ def person(name, age, *args, city, job):
 可以这样调用 ta
 
 ```python
-test_arg('beijin','wfp',age='25',job='hoker')
-test_arg('beijin','wfp',addr='shanghai',age='25',job='hoker')
+test_arg('beijing','wfp',age='25',job='hacker')
+test_arg('beijing','wfp',addr='shanghai',age='25',job='hacker')
 ```
 
 但是不能这样调用 ta
 
 ```python
-test_arg('beijin','wfp','25',job='hoker')
+test_arg('beijing','wfp','25',job='hacker')
 ```
 
 > 会提示缺少一个参数，定义了命名关键字参数的话，必须要把全部的关键字参数传入进去
@@ -152,6 +152,86 @@ test_arg('beijing', name='john')
 #### Parameter 组合使用时的顺序
 
 位置或关键字参数-非默认参数 >> 位置或关键字参数-默认参数 >> 可变位置参数 >> 仅关键字参数 >> 可变关键字参数
+
+## 函数参数传递
+
+> 在编程语言中常见的函数参数传递方式有以下两种：  
+> 值传递：调用函数时将实参的值拷贝一份传递给形参，在函数中如果对形参进行修改不会影响到实参。
+> 引用传递：调用函数时将实参的值的地址传递给形参，在函数中如果对形参进行修改将同时影响到实参。  
+> _注：Python 中形参会作为局部变量存放在函数的 Local 命令空间中_
+
+**先说结论：Python 函数传参使用的是引用传递。由于在 Python 中一切皆对象，实际传递的都是对象的引用。**
+
+### 不可变对象传参
+
+示例：
+
+```python
+def test(par):
+    print("par:", id(par))
+
+
+arg = 1
+print("arg:", id(arg))
+test(arg)
+
+
+# 运行结果如下
+arg: 4331100528
+par: 4331100528
+```
+
+Python 中的内置函数 `id()` 可以查看对象的内存地址，从该示例中可以看出，调用 `test()` 方法时是将实参变量 `arg` 的引用传递给了形参变量 `par`，因此 `arg` 和 `par` 地址相同。  
+由于 `arg` 的值 1 是不可变对象，所以在函数内部也无法对其进行修改。
+
+### 可变对象传参
+
+#### 修改形参引用的可变对象
+
+示例：
+
+```python
+def test(par):
+    print("par:", id(par))
+    par.append(1)
+
+
+arg = [0]
+print("[Before]", f"arg: {id(arg)}", arg, sep='\n')
+test(arg)
+print("[After]", f"arg: {id(arg)}", arg, sep='\n')
+
+
+# 运行结果如下：
+[Before]
+arg: 4462379136
+[0]
+par: 4462379136
+[After]
+arg: 4462379136
+[0, 1]
+```
+
+从该示例中可以看出，对于可变对象，调用 `test()` 方法时仍是将实参变量 `arg` 的引用传递给了形参变量 `par`，因此 `arg` 和 `par` 地址相同，并且在函数内部修改 `par` 引用的对象时会同时修改 `arg` 引用的对象。
+
+#### 修改形参的引用
+
+示例：
+
+```python
+def test(par):
+    print("par:", id(par))
+    par = [1]
+
+
+arg = [0]
+print("[Before]", f"arg: {id(arg)}", arg, sep='\n')
+test(arg)
+print("[After]", f"arg: {id(arg)}", arg, sep='\n')
+```
+
+从该示例中可以看出，当我们在函数内部修改形参变量 `par` 的引用时，并不会影响到实参变量 `arg` 引用的对象，这是因为我们只是将 `par` 引用的对象由 `[0]` 改为 `[1]`，并没有修改原对象 `[0]`，所以 `arg` 打印出来的值仍为 `[0]`。  
+_注：在 Python 中，赋值操作 `par = [1]` 本质上是建立了变量 `par` 与对象 `[1]` 的引用关系。_
 
 > **参考来源**：  
 > https://docs.python.org/3.6/glossary.html#term-parameter  
