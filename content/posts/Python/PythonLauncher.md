@@ -36,11 +36,11 @@ _Unlike the PATH variable, the launcher will correctly select the most appropria
 
 在安装 Python 3.3 以上版本的 Python 时，我们可以看到下图中的一个选项，当我们勾选时，系统便会帮助我们自动安装 Python Launcher
 
-![image](http://ww1.sinaimg.cn/large/ed19fa55gy1gfn61ddmwlj20iw0bqgnw.jpg)
+![image](https://ww1.sinaimg.cn/large/ed19fa55gy1gfn61ddmwlj20iw0bqgnw.jpg)
 
 当点击 Customize installation 时，会显示如下界面：
 
-![image](http://ww1.sinaimg.cn/large/ed19fa55gy1gfn68kg4duj20iw0bq40r.jpg)
+![image](https://ww1.sinaimg.cn/large/ed19fa55gy1gfn68kg4duj20iw0bq40r.jpg)
 
 图中标注的小字告诉我们，安装 Python Launcher 后可以通过全局命令 ‘py’ 来更方便地启动 Python。不勾选 launcher 项时，系统则不会安装 Python Launcher （但默认情况下该工具都是被勾选的）。
 
