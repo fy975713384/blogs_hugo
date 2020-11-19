@@ -53,7 +53,7 @@ class Singleton:
 >>> class Demo():
 ...     def __init__(self):
 ...         return None
-...·
+...
 >>> d = Demo()  # 可以返回 None 值，系统不报错
 
 >>> class Demo():
