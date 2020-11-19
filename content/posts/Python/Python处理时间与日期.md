@@ -16,7 +16,7 @@ authors:
 
 https://docs.python.org/3/library/time.html#
 
-![时间转换](http://ww1.sinaimg.cn/large/ed19fa55gy1ga80i0l694j20go07i752.jpg)
+![时间转换](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119121632.png)
 
 #### `class time.struct_time` 实例
 
@@ -89,7 +89,7 @@ timestamp = int(time.mktime(struct_time))  # 1577808000
 
 https://docs.python.org/3/library/datetime.html#
 
-![日期转换](http://ww1.sinaimg.cn/large/ed19fa55gy1ga80gxo6u0j20go07igmk.jpg)
+![日期转换](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119121848.png)
 
 #### `class datetime.datetime` 常用属性和方法
 
