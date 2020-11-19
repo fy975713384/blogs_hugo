@@ -71,41 +71,40 @@ $ pip3 install robotframework-autoitlibrary  # 用于进行 Windows GUI 自动�
 
 RIDE 是官方开发并推荐使用的 RF 测试用例开发环境，完成 RobotFramework 的安装后，Windows 端在命令行中运行 `$ python <python_path>\Scripts\ride.py`，Mac 端直接输入 `$ ride.py` 即可打开 RIDE 编辑器，如图：
 
-![RIDE 编辑器启动界面](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno1dzv97j20u60jagnc.jpg)
+![RIDE 编辑器启动界面](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124706.png)
 
 打开 顶部菜单栏 >> Tools，单击 Create RIDE Desktop Shortcut 则可在桌面创建 RIDE 快捷方式，下次即可直接双击快捷方式打开 RIDE 编辑器。
 _注意：快捷方式仅支持 Windows 端，Mac 端目前暂不支持。_
-![创建快捷方式](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno1yzs1uj20f00ak75m.jpg)
+![创建快捷方式](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124725.png)
 
 - 创建测试项目 Project
   打开 菜单栏 >> File >> New Project，在弹出的弹窗中输入项目名称，选择 Directory 类型，点击 OK 确认创建；
-  ![创建测试项目](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno2daycfj20sb0723zd.jpg)
+  ![创建测试项目](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124740.png)
 
 - 创建测试套件 Suite
   右键单击刚创建的测试项目，选择 New Suite，输入套件名称 , 选择 File 类型，点击 OK 确认创建；
-  ![创建测试套件](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno40ruxmj20sc078aaw.jpg)
+  ![创建测试套件](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124801.png)
 
 - 创建测试用例 Case
   右键单击刚创建的测试套件，选择 New Test Case，输入用例名称，点击 OK 确认创建；
-  ![创建测试用例](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno4ewzyej20sc05s74s.jpg)
+  ![创建测试用例](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124819.png)
 
 - 导入 RF 的第三方库（以 SeleniumLibrary 库为例）
   选择刚创建的测试套件，点击最右侧 Library 按钮，在弹出的弹窗中输入库名称，其余可不填，点击 OK 确认导入；
-  ![导入 SeleniumLibrary 库](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno4unrfpj20tv0c7gmy.jpg)
+  ![导入 SeleniumLibrary 库](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124841.png)
 
 导入后如果导入的库显示为红色，表示导入的库不存在（检查是否已安装相关的库，拼写是否正确，仍不行的话重启下 RIDE），如果是黑色则表示导入成功；
-![导入成功](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno5flnboj20dy05jq2y.jpg)
+![导入成功](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124906.png)
 
 - 编写测试脚本：（需要安装过 Chrome 和 对应版本的 chromedriver）
   选择刚创建的测试用例，在 Edit 页的表格中输入脚本；
-  ![编写测试脚本](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno665fd3j20qi06u0t5.jpg)
-
+  ![编写测试脚本](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124926.png)
 - 执行测试：
   勾选测试用例，点击运行按钮执行测试；（会正常打开 chrome 并跳转到简书作者首页）
-  ![执行测试用例](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno6xdbpfj20qo06sdgb.jpg)
+  ![执行测试用例](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119124945.png)
 
 - 查看测试报告：
-  ![查看测试报告](http://ww1.sinaimg.cn/large/ed19fa55gy1gfno7ymgzjj20pt0h0taa.jpg)
+  ![查看测试报告](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119125004.png)
 
 > 参考来源：  
 > https://github.com/robotframework/RIDE/releases  
