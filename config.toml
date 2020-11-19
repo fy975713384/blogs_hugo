@@ -54,7 +54,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   headerTitle = "Wing"                   # default: title
   customFavicon = "images/wing_icon.png"
   # siteLogoImage = "images/wing_icon.png"     # shown besides logoTitle
-  headerImage = "images/background.jpg"
+  headerImage = "https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/background.jpg"
   showAuthorCard = true # Whether to show author information below the article
 
   showMenuLanguages = true
