@@ -1,5 +1,5 @@
 ---
-title: 'Python 字符串格式化总结'
+title: 'Python 字符串格式化'
 date: 2018-10-06T16:14:18+08:00
 lastmod: 2018-10-06T16:14:18+08:00
 tags: ['Python']
