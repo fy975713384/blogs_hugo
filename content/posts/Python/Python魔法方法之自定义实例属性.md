@@ -12,7 +12,7 @@ authors:
 
 > _Python 魔法方法系列 让你的代码更加 pythonic_
 
-## \_\_getattribute\_\_()
+## \_\_getattribute\_\_
 
 `object.__getattribute__(self, name)` 方法用于自定义实例属性的访问，使用时需注意：
 
@@ -126,7 +126,7 @@ I am protector
   RecursionError: maximum recursion depth exceeded while calling a Python object
   ```
 
-## \_\_getattr\_\_()
+## \_\_getattr\_\_
 
 `object.__getattr__(self, name)` 方法同样用于自定义实例属性的访问，使用时需注意：
 
@@ -209,7 +209,7 @@ __delattr__
 __delattr__
 ```
 
-## \_\_dir\_\_()
+## \_\_dir\_\_
 
 `object.__dir__(self)` 在对实例调用 `dir()` 时被调用。该魔法方法必须返回一个 `sequence`。`dir()` 会将该 `sequence` 转换成列表并进行排序。
 

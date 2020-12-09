@@ -22,7 +22,7 @@ authors:
 
 在 Python 中，`__new__()` 和 `__init__()` 方法组合起来扮演了构造函数的角色，而 `__del__()` 方法起到了析构函数的作用。
 
-## \_\_new\_\_()
+## \_\_new\_\_
 
 `object.__new__(cls[, ...])` 方法用于实例的创建，使用时需注意：
 
@@ -39,7 +39,7 @@ class Singleton:
         return cls.instance
 ```
 
-## \_\_init\_\_()
+## \_\_init\_\_
 
 `object.__init__(self[, ...])` 方法用于实例的初始化，使用时需注意：
 
@@ -72,7 +72,7 @@ Traceback (most recent call last):
 TypeError: __init__() should return None, not 'int'
 ```
 
-## \_\_del\_\_()
+## \_\_del\_\_
 
 `object.__del__(self)` 方法用于实例销毁前的清理工作，使用时需注意：
 
