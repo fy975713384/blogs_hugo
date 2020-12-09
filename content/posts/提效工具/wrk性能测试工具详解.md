@@ -1,14 +1,14 @@
 ---
 title: 'wrk 性能测试工具详解'
 date: 2019-11-12T16:52:49+08:00
-lastmod: 2019-11-12T16:52:49+08:00
+lastmod: 2020-12-09T14:12:27+08:00
 tags: ['性能测试', '提效工具']
 categories: ['Notes']
 authors:
   - '潘峰'
 ---
 
-> 建议练习时可以使用 flask 等 Web 框架在本地搭建一个 HTTP 服务
+> 建议练习时可以使用 FastApi 或 Flask 等 Web 服务端框架在本地搭建一个 HTTP 服务
 
 ## wrk 简介
 
