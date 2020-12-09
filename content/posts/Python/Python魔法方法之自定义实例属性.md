@@ -137,7 +137,7 @@ I am protector
 - 重写该方法时需要返回一个属性值或是触发 `AttributeError` 异常。
 - 当定制类继承 `Object` 时，同时也会继承 `object.__getattribute__(self, name)`，但它没有执行任何操作。
 
-## \_\_setattr\_\_()
+## \_\_setattr\_\_
 
 `object.__setattr__(self, name, value)` 方法用于自定义实例属性的赋值，使用时需注意：
 
@@ -178,7 +178,7 @@ assign value via Object.__setattr__(self, key, value)
 Karen1
 ```
 
-## \_\_delattr\_\_()
+## \_\_delattr\_\_
 
 `object.__delattr__(self, name)` 方法用于自定义实例属性的删除，使用时需注意：
 
