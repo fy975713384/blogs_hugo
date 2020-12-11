@@ -10,6 +10,8 @@ authors:
 
 # Python 时间与日期处理
 
+> 在信贷项目中会频繁地对日期时间进行处理，尤其是账单平移工具会大量地进行时间计算，熟练掌握 Python 的日期时间操作将给这些测试工作带来事半功倍的效果。
+
 ## 内置库
 
 ### time 模块
@@ -191,16 +193,23 @@ calendar.monthrange(2020, 2)[1]
 
 ### dateutil 库
 
-- 安装：`$ pip install python-dateutil`
+- 安装：`pip install python-dateutil`
+- 导入库：
+
+### pendulum 库
+
+https://pendulum.eustace.io/
+
+- 安装：`pip install pendulum`
 - 导入库：
 
 ---
 
 > 附：
 
+```plain
 术语表：
 
-```plain
 UTC (Coordinated Universal Time, 国际协调时间)
 以原子时秒长为基础，在时刻上尽量接近于世界时的一种时间计量系统。
 
@@ -216,11 +225,9 @@ CST
 澳大利亚中部时间：Central Standard Time (Australia) UT+9:30
 中国标准时间：China Standard Time UT+8:00
 古巴标准时间：Cuba Standard Time UT-4:00
-```
 
 时间参数格式：
 
-```plain
 %a 星期几的简写
 %A 星期几的全称
 %b 月份的简写
