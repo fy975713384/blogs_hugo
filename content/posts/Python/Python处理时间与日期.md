@@ -16,11 +16,17 @@ authors:
 
 ### time 模块
 
+#### 官方文档
+
 https://docs.python.org/3/library/time.html#
+
+#### 时间对象转换
 
 ![时间转换](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119121632.png)
 
-#### `class time.struct_time` 实例
+#### 核心类
+
+`class time.struct_time`
 
 | 索引 | 实例属性  | 含义         | 值                        |
 | :--- | :-------- | :----------- | :------------------------ |
@@ -51,7 +57,7 @@ print(int(t * 1000))           # 毫秒级时间戳
 print(int(t * 1000000))        # 微秒级时间戳
 ```
 
-- 获取当天的年月日
+- 获取当前时间的年月日
 
 ```python
 time.localtime().tm_year  # 年
@@ -91,46 +97,18 @@ timestamp = int(time.mktime(struct_time))  # 1577808000
 
 https://docs.python.org/3/library/datetime.html#
 
+#### 核心对象
+
+| 对象名    | 类描述                          | 作用                       |
+| --------- | ------------------------------- | -------------------------- |
+| date      | `class datetime.date(...)`      | 日期操作                   |
+| time      | `class datetime.time(...)`      | 时间操作                   |
+| datetime  | `class datetime.datetime(...)`  | 约等于 date 和 time 的结合 |
+| timedelta | `class datetime.timedelta(...)` | 日期差值计算               |
+
+#### datetime 对象转换
+
 ![日期转换](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/20201119121848.png)
-
-#### `class datetime.datetime` 常用属性和方法
-
-| 类属性 | 含义                    | 值                                         |
-| :----- | :---------------------- | :----------------------------------------- |
-| min    | 最早的可表示的 datetime | datetime(1, 1, 1, 0, 0)                    |
-| max    | 最晚的可表示的 datetime | datetime(9999, 12, 31, 23, 59, 59, 999999) |
-
-| 类方法                            | 含义                                                        | 返回值            |
-| :-------------------------------- | :---------------------------------------------------------- | :---------------- |
-| today()                           | 返回当前本地 datetime (tz=None)                             | datetime 实例对象 |
-| now(tz=None)                      | 返回当前时区 datetime                                       | datetime 实例对象 |
-| utcnow()                          | 返回当前 UTC datetime                                       | datetime 实例对象 |
-| fromtimestamp(timestamp, tz=None) | 返回指定时间戳对应时区时间的 datetime                       | datetime 实例对象 |
-| utcfromtimestamp(timestamp)       | 返回指定时间戳对应 UTC 时间的 datetime                      | datetime 实例对象 |
-| fromisoformat(date_string)        | 将符合 ISO 8601 日期与时间组合表示法的字符串转换成 datetime | datetime 实例对象 |
-| strptime(date_string, format)     | 将指定时间字符串转换成对应的时间                            | datetime 实例对象 |
-
-| 实例属性    | 含义 | 值  |
-| :---------- | :--- | :-- |
-| year        | 年   |     |
-| month       | 月   |     |
-| day         | 日   |     |
-| hour        | 时   |     |
-| minute      | 分   |     |
-| second      | 秒   |     |
-| microsecond | 微秒 |     |
-
-| 实例方法         | 含义                                                     | 返回值                           |
-| :--------------- | :------------------------------------------------------- | :------------------------------- |
-| date()           | 返回与 datetime 年月日相同的 date 对象                   | datetime.date(...)               |
-| time()           | 返回与 datetime 时分秒微秒以及 fold 相同的 time 对象     | datetime.time(...)               |
-| timetuple()      | 返回 datetime 相同的 time.struct_time 对象               | time.struct_time(...)            |
-| utctimetuple()   |                                                          |                                  |
-| timestamp()      |                                                          |                                  |
-| weekday()        | 返回 datetime 星期的序数                                 | rang(7)                          |
-| isoformat(...)   | 返回 datetime 符合 ISO 8601 日期与时间组合表示法的字符串 | eg: '2020-02-02T02:02:02.222222' |
-| ctime()          | 返回 datetime 的格式化字符串                             | eg: 'Thu Mar 5 10:43:53 2020'    |
-| strftime(format) | 将 datetime 转换成对应格式的字符串                       |                                  |
 
 #### 示例代码
 
@@ -193,15 +171,11 @@ calendar.monthrange(2020, 2)[1]
 
 ### dateutil 库
 
-- 安装：`pip install python-dateutil`
-- 导入库：
-
 ### pendulum 库
 
-https://pendulum.eustace.io/
+#### 官方文档
 
-- 安装：`pip install pendulum`
-- 导入库：
+https://pendulum.eustace.io/
 
 ---
 
