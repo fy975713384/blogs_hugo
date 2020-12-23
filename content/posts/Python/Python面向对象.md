@@ -1,12 +1,24 @@
 ---
 title: 'Python 面向对象'
 date: 2019-03-23T12:19:10+08:00
-lastmod: 2020-08-07T18:56:47+08:00
+lastmod: 2020-12-23T19:18:50+08:00
 tags: ['Python', '编程范式']
 categories: ['Notes']
 authors:
   - '潘峰'
 ---
+
+> 面向对象(Object Oriented)是软件开发方法，一种编程范式。 --百度百科
+
+## Python 中的对象
+
+- **Python 中一切皆对象**
+- **对象** 是对数据的抽象
+- **对象** 拥有编号(id)、类型(type)、值
+
+![](https://cdn.jsdelivr.net/gh/fy975713384/cloud-img@main/blog/Python3.png)
+
+## Python 面向对象的特性
 
 ### 封装
 
