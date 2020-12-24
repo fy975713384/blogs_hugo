@@ -1,5 +1,5 @@
 ---
-title: '谨慎执行Python序列的重复操作'
+title: '谨慎执行 Python 序列的重复操作'
 date: 2020-12-24T10:57:51+08:00
 lastmod: 2020-12-24T10:57:51+08:00
 tags: ['Python']
