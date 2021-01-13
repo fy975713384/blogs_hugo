@@ -85,19 +85,24 @@ _请先检查本机目录 `C:\Users\<用户名>\.ssh` 下是否有 `id_rsa` 和 
 ### 附：另外附上 cmder 的一些初始化配置
 
 ```bash
-##### 添加至环境变量
-将 cmder.exe 存放的目录添加到系统环境变量 Path <br>
-Win+R 打开运行，输入 cmder 按回车打开 cmder <br>
+右键 cmder.exe 以管理员身份运行
 
-##### 添加至右键菜单（需要运行管理员权限）
-以管理员身份运行 cmd 输入命令：`Cmder.exe /REGISTER ALL`
+##### 添加至环境变量
+命令行输入命令 `setx -m PATH "%PATH%";<your-cmder.exe-path>`
+将 cmder.exe 存放的目录添加到系统环境变量 Path
+
+##### 添加至右键菜单（需要管理员权限）
+命令行输入命令：`Cmder.exe /REGISTER ALL`
+
+##### 运行 cmder
+Win+R 打开运行，输入 cmder 按回车打开 cmder
 
 ##### 解决中文显示乱码问题
 Settings --> Startup --> Environment 添加
 `set LANG=zh_CN.UTF-8`
 
 ##### 修改默认的命令提示符λ改成$
-将 `cmder\vendor\clink.lua` 文件中第42行中 `local lambda = "λ"` 修改为 `local lambda = "$"` <br>
+将 `cmder\vendor\clink.lua` 文件中第42行中 `local lambda = "λ"` 修改为 `local lambda = "$"`
 ```
 
 > 参考来源：  
