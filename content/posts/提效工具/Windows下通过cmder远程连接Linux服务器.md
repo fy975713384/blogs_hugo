@@ -104,6 +104,10 @@ Settings --> Startup --> Environment 添加以下两行配置
 set LANG=zh_CN.UTF-8
 set LC_ALL=zh_CN.utf8
 
+### 解决中文显示重叠问题
+
+Settings --> General --> Fonts --> 取消勾选 Compress long string to fit space
+
 # 【外观优化（可选）】
 
 ### 修改默认的命令提示符λ改成$
