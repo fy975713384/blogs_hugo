@@ -1,7 +1,7 @@
 ---
 title: 'Windows 下通过 cmder 远程连接 Linux 服务器'
 date: 2018-12-31T01:16:23+08:00
-lastmod: 2018-12-31T01:16:23+08:00
+lastmod: 2021-01-15T12:00:38+08:00
 tags: ['提效工具', 'cmder']
 categories: ['Notes']
 authors:
@@ -105,7 +105,6 @@ set LANG=zh_CN.UTF-8
 set LC_ALL=zh_CN.utf8
 
 ### 解决中文显示重叠问题
-
 Settings --> General --> Fonts --> 取消勾选 Compress long string to fit space
 
 # 【外观优化（可选）】
