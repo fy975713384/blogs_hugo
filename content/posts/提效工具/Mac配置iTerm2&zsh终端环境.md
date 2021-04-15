@@ -1,7 +1,7 @@
 ---
 title: 'Mac 配置 iTerm2 & zsh 终端环境'
 date: 2020-06-19T23:01:23+08:00
-lastmod: 2020-06-19T23:01:23+08:00
+lastmod: 2021-04-15T10:04:52+08:00
 tags: ['提效工具', 'iterm2', 'zsh']
 categories: ['Notes']
 authors:
@@ -28,7 +28,8 @@ authors:
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-> githubusercontent.com 域名我曾一度即使有梯子也因为没有配置终端代理导致命令执行不成功，索性直接通过浏览器打开网址将其作为文件下载下来然后通过执行 `/bin/bash -c 文件名` 来完成了安装
+> githubusercontent.com 域名我曾一度即使有梯子也因为没有配置终端代理导致命令执行不成功，索性直接通过浏览器打开网址将其作为文件下载下来然后通过执行 `/bin/bash -c 文件名` 来完成了安装  
+> 直接下载下来的 install.sh 文件可能没有执行权限，需要执行 `chmod +x 文件名` 命令增加执行权限
 
 ## Second. 使用 Homebrew 安装 iTerm2 并进行基础配置
 

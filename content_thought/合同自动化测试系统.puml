@@ -1,0 +1,93 @@
+@startuml contract-config
+component "合同预期结果配置组件" {
+    [配置内容提取]
+    [业务数据状态配置]
+    [合同列表配置]
+    [合同要素标识配置]
+    [固定合同要素信息配置]
+}
+@enduml
+
+
+@startuml contract-file
+component "合同文件处理组件" {
+    [文件下载] as download
+    [文件存储] as save
+
+    download <.. 文件下载接口
+
+    save .. 存储服务器
+    save .. 本地存储路径
+}
+@enduml
+
+
+@startuml  contract-parser
+component "PDF 文件解析组件" {
+    [PDF 解析器] as parser
+
+    PDF解析 .u.> parser
+}
+@enduml
+
+
+@startuml  contract-check
+component "合同校验组件" {
+    [合同文件数量校验器]
+    [合同文本内容校验器]
+    [合同自定义参数校验器]
+    [合同图片校验器]
+    [合同表格内容校验器]
+    [合同签章内容校验器]
+}
+@enduml
+
+
+@startuml  contact-result
+component "测试结果处理组件" {
+    [测试结果收集器]
+    [测试缺陷自动上报]
+    [测试报告自动生成]
+    [测试报告发送]
+}
+@enduml
+
+
+
+
+@startuml contract-auto-test
+:业务数据;
+:判断业务数据状态;
+split
+    :提取已签署合同列表;
+split again
+    :提取当前状态配置的\n合同列表;
+end split
+if(数据是否一致?) then (Y)
+    :标记合同数量正确;
+else (N)
+    :标记合同数量错误;
+endif
+:提取已生成合同的 PDF 文件队列;
+:提取队列中第一份合同 PDF 文件;
+repeat
+    :解析合同 PDF;
+    split
+        :提取当前合同配置的要素信息;
+    split again
+        :提取解析到的合同要素信息;
+    end split
+    if(要素信息数量是否一致?) then (Y)
+        :标记合同要素数量正确;
+    else (N)
+        :标记合同要素数量错误;
+    endif
+    if(要素信息内容是否一致?) then (Y)
+        :标记合同要素内容正确;
+    else (N)
+        :标记合同要素内容错误;
+    endif
+repeatwhile (提取队列中下一份合同 PDF)
+:收集结果;
+:测试完成;
+@enduml

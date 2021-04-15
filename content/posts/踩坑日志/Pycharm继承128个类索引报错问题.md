@@ -6,7 +6,6 @@ tags: ['踩坑日志']
 categories: ['Notes']
 authors:
   - '潘峰'
-draft: true
 ---
 
 > 最近团队在使用 Pycharm 的过程中一直被一个问题所困扰，就是通过 Pycharm 打开自动化测试项目时，Pycharm 一直显示在 indexing，导致工具的相关功能无法使用，且会占用大量 Mac 机器的资源，导致无法进行其它工作。  
