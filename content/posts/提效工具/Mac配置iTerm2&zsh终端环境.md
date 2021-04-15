@@ -38,7 +38,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 1. 安装
 
    ```shell
-   $ brew cask install iterm2
+   $ brew install iterm2 --cask
    ```
 
 2. 配置 iTerm2 基础设置
