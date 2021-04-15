@@ -145,7 +145,7 @@ $ brew search zsh-
 
 3. 在文件最底部添加如下两行并保存
 
-   ```bash
+   ```shell
    alias proxy="export ALL_PROXY='http://127.0.0.1:xxxx'"
    alias proxyreset="unset ALL_PROXY"
    ```
