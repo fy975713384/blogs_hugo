@@ -1,7 +1,7 @@
 ---
 title: 'Python 面向对象'
 date: 2019-03-23T12:19:10+08:00
-lastmod: 2020-12-23T19:18:50+08:00
+lastmod: 2021-04-16T14:56:59+08:00
 tags: ['Python', '编程范式']
 categories: ['Notes']
 authors:
@@ -107,6 +107,29 @@ end D...
 ```
 
 可以看出 Python 中从 Object 继承来的类，会采用**广度优先**搜索的方式来进行继承。
+
+### MRO 问题
+
+```python
+class A:
+    pass
+
+
+class C(A):
+    pass
+
+
+class B(A, C):
+    pass
+
+
+B()
+
+# 调用结果
+...
+TypeError: Cannot create a consistent method resolution
+order (MRO) for bases A, C
+```
 
 ### 多态
 
